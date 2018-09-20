@@ -21,6 +21,10 @@ open class Rectangulo:Dibujables, Describibles {
     }
 
     override fun dibujar() {
+
+    }
+
+    override fun describir() {
         val horizontal = Scanner(System.`in`)
         print("De que longitud desea los lados horizontales?")
 
@@ -38,9 +42,6 @@ open class Rectangulo:Dibujables, Describibles {
         }
         for (i in vertical)
             println(vertical)
-    }
-
-    override fun describir() {
 
     }
 

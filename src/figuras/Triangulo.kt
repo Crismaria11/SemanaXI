@@ -1,9 +1,10 @@
 package figuras
 
+import comportamientos.Describibles
 import comportamientos.Dibujables
 import java.util.*
 
-open class Triangulo: Dibujables {
+open class Triangulo: Dibujables, Describibles {
     var altura: Int
 
     constructor(_altura: Int){
@@ -17,6 +18,10 @@ open class Triangulo: Dibujables {
     }
 
     override fun dibujar() {
+
+    }
+
+    override fun describir() {
         val alto = Scanner(System.`in`)
         print("De que longitud desea la altura?")
 
