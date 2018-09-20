@@ -1,3 +1,4 @@
+
 package figuras
 
 import comportamientos.Describibles
@@ -20,29 +21,32 @@ open class Rectangulo:Dibujables, Describibles {
         """.trimIndent()
     }
 
+    //funcion para dibujar
     override fun dibujar() {
+        val longitudH = readLine()
+        if (longitudH != null) {
+            for (i in longitudH) {
+                println(longitudH)
+            }
+        }
+
+        val longitudV = readLine()
+        if (longitudV != null) {
+            for (i in longitudV) {
+                println(longitudV)
+            }
+        }
 
     }
 
+    //funcion para describir
     override fun describir() {
-        val horizontal = Scanner(System.`in`)
-        print("De que longitud desea los lados horizontales?")
+        //Use el scanner como un input
+        val longitudH = readLine()
+        println("la longitud horizontal que desea es: " +longitudH)
 
-        var intege: Int = horizontal.nextInt()
-        println("Deseas: $intege de longitud horizontal")
-
-        val vertical = Scanner(System.`in`)
-        print("Que longitud desea para los lados verticales")
-
-        var integer: Int = vertical.nextInt()
-        println("Deseas: $integer de longitud vertical")
-
-        for (i in horizontal) {
-            println(horizontal)
-        }
-        for (i in vertical)
-            println(vertical)
-
+        val longitudV = readLine()
+        println("la longitud vertical que desea es: " +longitudV)
     }
 
 

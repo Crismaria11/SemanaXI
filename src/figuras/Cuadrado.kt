@@ -1,3 +1,4 @@
+
 package figuras
 
 import comportamientos.Describibles
@@ -19,23 +20,22 @@ open class Cuadrado:Dibujables, Describibles {
         """.trimIndent()
     }
 
+    //funcion para dibujar
     override fun dibujar() {
-
-    }
-
-    override fun describir() {
-        val lado = Scanner(System.`in`)
-        print("De que longitud desea cada lado?")
-
-        var integer: Int = lado.nextInt()
-        println("Desea $integer de lado")
-
-        for (i in lado) {
-            println(lado)
+        val lado = readLine()
+        if(lado != null) {
+            for (i in lado){
+                println(lado)
+            }
         }
+
     }
 
-
-
+    //funcion para describir
+    override fun describir() {
+        val lado = readLine()
+        println("la altura que desea es: " +lado)
+    }
 }
+
 

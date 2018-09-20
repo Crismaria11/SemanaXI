@@ -1,3 +1,4 @@
+
 package figuras
 
 import comportamientos.Describibles
@@ -17,19 +18,20 @@ open class Triangulo: Dibujables, Describibles {
         """.trimIndent()
     }
 
+    //funcion para dibujar
     override fun dibujar() {
+        val altura = readLine()
+        if(altura != null) {
+            for (i in altura){
+                println(altura)
+            }
+        }
 
     }
 
+    //funcion para describir
     override fun describir() {
-        val alto = Scanner(System.`in`)
-        print("De que longitud desea la altura?")
-
-        var integer: Int = alto.nextInt()
-        println("Deseas $integer de altura")
-
-        for (i in alto){
-            println(alto)
+        val altura = readLine()
+        println("la altura que desea es: " +altura)
         }
     }
-}
